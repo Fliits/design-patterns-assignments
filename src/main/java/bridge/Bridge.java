@@ -11,8 +11,13 @@ class Bridge {
         Vehicle vehicle3 = new Helicopter(new Produce(), new Assemble());
         vehicle3.manufacture();
 
-        vehicle1.go();
-        vehicle2.go();
-        vehicle3.go();
+        vehicle1.go(vehicle1.inTheShop);
+        vehicle2.go(vehicle2.inTheShop);
+        vehicle3.go(vehicle3.inTheShop);
+        vehicle3.maintenance(vehicle3.inTheShop);
+
+        vehicle1.isInTheShop();
+        vehicle2.isInTheShop();
+        vehicle3.isInTheShop();
     }
 }

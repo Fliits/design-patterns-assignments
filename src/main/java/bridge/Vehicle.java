@@ -1,6 +1,7 @@
 package bridge;
 
 abstract class Vehicle {
+    protected boolean inTheShop = false;
     protected Workshop workShop1;
     protected Workshop workShop2;
 
@@ -12,5 +13,9 @@ abstract class Vehicle {
 
     public abstract void manufacture();
 
-    public abstract void go();
+    public abstract void go(boolean inTheShop);
+
+    public abstract void maintenance(boolean inTheShop);
+
+    public abstract boolean isInTheShop();
 }
