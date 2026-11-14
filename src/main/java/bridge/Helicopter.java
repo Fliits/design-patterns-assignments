@@ -31,6 +31,7 @@ class Helicopter extends Vehicle {
 
     @Override
     public boolean isInTheShop() {
+        System.out.println("Helicopter is in the shop: " + this.inTheShop);
         return this.inTheShop;
     }
 }

@@ -31,6 +31,7 @@ class Bike extends Vehicle {
 
     @Override
     public boolean isInTheShop() {
+        System.out.println("Bike is in the shop: " + this.inTheShop);
         return this.inTheShop;
     }
 }
